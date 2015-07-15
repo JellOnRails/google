@@ -1,10 +1,9 @@
-from selenium import webdriver
+from features.browser import Browser
 
 
 def before_all(context):
-    context.browser = webdriver.Firefox()
-    context.browser.implicitly_wait(5)
+    context.browser = Browser()
 
 
 def after_all(context):
-    context.browser.quit()
+    context.browser.close() 

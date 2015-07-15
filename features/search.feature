@@ -5,7 +5,7 @@ Feature: Search
 
   Scenario: Search for artist
     Given I am on search page
-    When Search for Red hot chili peppers text
+    When Search for Red Hot Chili Peppers text
     Then Search result should contain Red Hot Chili Peppers link on 3 position
     When Search for Nick Cave text
     Then Search result should contain Nick Cave link on 4 position
