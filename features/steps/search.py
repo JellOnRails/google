@@ -20,6 +20,4 @@ def step_impl(context, link, num):
 
 @then('Search result should not contain {link} link on {num} position')
 def step_impl(context, link, num):
-    print(context.search.expect(link, num))
-    print(not context.search.expect(link, num))
     assert not context.search.expect(link, num)
